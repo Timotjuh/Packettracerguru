@@ -1,0 +1,25 @@
+Het inschakelen van een interface:
+Switch(config)# interface FastEthernet0/1
+Switch(config-if)# no shutdown
+Hiermee wordt interface FastEthernet0/1 ingeschakeld op de switch.
+
+Het controleren van de status van de interfaces:
+Switch# show interfaces status
+Dit commando geeft de status van alle interfaces op de switch weer, inclusief of ze up of down zijn.
+
+Ping-test vanaf een aangesloten pc:
+Open een commandoprompt op een aangesloten pc en voer het volgende commando uit om een ping-test uit te voeren naar een ander apparaat:
+ping <IP-adres>
+Vervang <IP-adres> door het IP-adres van het apparaat dat je wilt pingen.
+
+Configuratie van VLAN's:
+Switch(config)# vlan <vlan-nummer>
+Switch(config-vlan)# name <vlan-naam>
+Met deze commando's kun je VLAN's maken en namen toewijzen aan de VLAN's. Vervang <vlan-nummer> door het gewenste VLAN-nummer en <vlan-naam> door de gewenste naam voor het VLAN.
+
+Trunking-configuratie:
+Switch(config)# interface FastEthernet0/1
+Switch(config-if)# switchport mode trunk
+Switch(config-if)# switchport trunk allowed vlan <vlan-lijst>
+Hiermee configureer je interface FastEthernet0/1 als een trunk-interface en specificeer je welke VLAN's zijn toegestaan op de trunk. Vervang <vlan-lijst> door een komma-gescheiden lijst van VLAN-nummers.
+
