@@ -1,0 +1,24 @@
+Inschakelen van een interface: 
+Router(config)# interface <interface-naam>
+Router(config-if)# no shutdown
+
+Hiermee wordt de interface ingeschakeld op de router. Vervang <interface-naam> door de naam of het nummer van de gewenste interface.
+
+Controleren van de status van de interfaces:
+       Router# show interfaces status
+Dit commando geeft de status van alle interfaces op de router weer, inclusief of ze up of down zijn.
+
+Ping-test vanaf de router:
+       Router# ping <IP-adres>
+Met dit commando kan de router een ping-test uitvoeren naar een ander apparaat. Vervang <IP-adres> door het IP-adres van het apparaat dat je wilt pingen.
+
+Configuratie van IP-adressen op interfaces:
+Router(config)# interface <interface-naam>
+Router(config-if)# ip address <IP-adres> <subnetmasker>
+       Met deze commando's kun je een IP-adres en subnetmasker configureren op de gewenste interface van de router. Vervang <interface-naam> door de naam of het nummer van de interface, <IP-adres> door het gewenste IP-adres en <subnetmasker> door het bijbehorende subnetmasker.
+
+Configuratie van statische routes:
+Router(config)# ip route <doelnetwerk> <subnetmasker> <volgend-hop-adres>
+
+<doelnetwerk> door het doelnetwerk of de bestemming die je wilt bereiken, 
+<subnetmasker> door het bijbehorende subnetmasker en <volgend-hop-adres> door het IP-adres van het volgende hop-apparaat.
