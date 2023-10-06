@@ -2,7 +2,7 @@ S1# show ip ssh
 S1# ip domain-name (domein)
 S1(config)# crypto key generate rsa
    How many bits in the modulus [512]: 1024
-S1(config)# (naam admin) admin secret (wachtwoord)
+S1(config)# username (naam admin) admin secret (wachtwoord)
 S1(config)# line vty 0 15
   S1(config-line)# transport input ssh
   S1(config-line)# login local
