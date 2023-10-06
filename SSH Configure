@@ -1,3 +1,4 @@
+:C/ telnet (ip)
 S1# show ip ssh
 S1# ip domain-name (domein)
 S1(config)# crypto key generate rsa
@@ -8,3 +9,4 @@ S1(config)# line vty 0 15
   S1(config-line)# login local
   S1(config-line)# exit
 S1(config)# ip ssh version 2
+:C/ ssh-l (username) (ip)
