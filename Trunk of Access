@@ -1,0 +1,11 @@
+In Cisco Packet Tracer, om te controleren of een poort is geconfigureerd als trunk of access, kun je het commando "show interfaces trunk" gebruiken. Dit commando geeft informatie over de trunk-status van de interfaces op een Cisco-switch.
+
+Switch> show interfaces trunk
+
+Dit commando toont een lijst van alle interfaces op de switch en geeft aan of ze trunking zijn ingeschakeld en, zo ja, welke VLAN's worden toegestaan op de trunk.
+
+Als alternatief, als je specifieke informatie wilt over een bepaalde interface, kun je het volgende commando gebruiken:
+
+Switch> show interface <interface-id> switchport
+
+Vervang <interface-id> door de daadwerkelijke interface die je wilt controleren. Dit commando geeft gedetailleerde informatie over de switchport-configuratie, inclusief of het een access- of trunk-poort is, welk VLAN is toegewezen, en andere relevante informatie.
