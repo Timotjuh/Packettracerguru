@@ -1,0 +1,11 @@
+Stap 1: Desktop -> TelNet / SSH 
+Stap 2: Vul IP in van het device die je wilt bereiken
+Stap 3: enable
+Stap 4: config t
+Stap 5: cdp run
+Stap 6: lldp run
+Stap 7: exit
+Stap 8: show lldp neighbors
+Stap 9: show arp
+
+Noteer: Local intf, Port ID
